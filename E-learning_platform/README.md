@@ -1,0 +1,1 @@
+## Comprehensive system for managing courses, including features like course creation, editing, and categorization. Instructors are able to upload course materials, videos, and assignments.
