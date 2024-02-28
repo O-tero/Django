@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "embed_video",
     "debug_toolbar",
     "redisboard",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -157,3 +158,9 @@ AUTHENTICATION_BACKENDS = (
     # `allauth` specific authentication methods, such as login by e-mail
     "allauth.account.auth_backends.AuthenticationBackend",
 )
+
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
+    ]
+}
