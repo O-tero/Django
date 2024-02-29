@@ -15,6 +15,7 @@ attrs = "*"
 django-redisboard = "*"
 djangorestframework = "*"
 requests = "*"
+channels = "*"
 
 [dev-packages]
 
