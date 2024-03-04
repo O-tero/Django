@@ -167,4 +167,4 @@ REST_FRAMEWORK = {
     ]
 }
 
-ASGI_APPLICATION = "educa.routing.application"
+ASGI_APPLICATION = "SkillUp.routing.application"
