@@ -33,6 +33,7 @@ urlpatterns = [
     path("__debug__/", include("debug_toolbar.urls")),
     path("api/", include("courses.api.urls", namespace="api")),
     path("chat/", include("chat.urls", namespace="chat")),
+    path("accounts/", include("accounts.urls")),
 ]
 
 if settings.DEBUG:
