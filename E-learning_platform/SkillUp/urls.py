@@ -21,6 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from courses.views import CourseListView
+from django.contrib.auth.views import LoginView, LogoutView
 
 urlpatterns = [
     path("accounts/login/", auth_views.LoginView.as_view(), name="login"),
