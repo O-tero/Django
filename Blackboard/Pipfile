@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+wagtail = ">=6.0,<6.1"
+django = ">=4.2,<5.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
