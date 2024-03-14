@@ -48,7 +48,11 @@ INSTALLED_APPS = [
     "chat",
     "channels",
     "accounts",
+    "crispy_forms",
+    "crispy_bootstrap4",
 ]
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4",
+CRISPY_TEMPLATE_PACK = "bootstrap4",
 
 MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
@@ -66,7 +70,7 @@ ROOT_URLCONF = "SkillUp.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -205,5 +209,6 @@ def patch_broken_pipe_error():
 
     BaseServer.handle_error = my_handle_error = my_handle_error
     handlers.BaseHandler.log_exception = my_log_exception
+
 
 patch_broken_pipe_error()

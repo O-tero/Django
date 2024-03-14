@@ -16,6 +16,7 @@ from .models import Course, Subject
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 from students.forms import CourseEnrollForm
 
+
 # Create your views here.
 
 
